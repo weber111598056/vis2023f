@@ -69,7 +69,7 @@ a1 = createArray();     // [] or new Array()
 a2 = createArray(2);    // new Array(2)
 //alert(a2);
 
-a3 = createArray(10, 13); // [new Array(2),
+a3 = createArray(121, 13); // [new Array(2),
                    //  new Array(2),
                    //  new Array(2)]
 //alert(a3);
@@ -78,8 +78,48 @@ a3[0] = ['序號', '班級', '學號', '姓名', 'GitHub', '作業一', '作業�
 
 for (var i = 1; i < a3.length; i++) {
     a3[i][0] = i;
-    a3[i][1] = '電資四';
-    a3[i][2] = 112598000 + Math.floor(Math.random() * 999);
+    tmp = Math.floor(Math.random() * 999);
+    if (tmp%5 == 0) {
+        a3[i][1] = '資工系';
+    } // if
+    else if (tmp%5 == 1) {
+        a3[i][1] = '資工所';
+    } // else if
+    else if (tmp%5 == 2) {
+        a3[i][1] = '電資AI';
+    } // else if
+    else if (tmp%5 == 3) {
+        a3[i][1] = '電資資安';
+    } // else if
+    else{
+        a3[i][1] = '創新AI';
+    } // else
+
+    if (Math.random() > 0.5 ) {
+        a3[i][2] = "111"
+    } // if
+    else{
+        a3[i][2] = "112"
+    } // else
+
+    tmp = Math.floor(Math.random() * 999);
+    if (tmp%5 == 0) {
+        a3[i][2] += "590"
+    } // if
+    else if (tmp%5 == 1) {
+        a3[i][2] += "598"
+    } // else if
+    else if (tmp%5 == 2) {
+        a3[i][2] += "C52"
+    } // else if
+    else if (tmp%5 == 3) {
+        a3[i][2] += "C53"
+    } // else if
+    else{
+        a3[i][2] += "C71"
+    } // else
+
+    a3[i][2] += Math.floor(Math.random() * 999).toString().padStart(3, "0");
     //a3[i][1] = '路人甲'; // 4E00-9FFF
     //a3[i][1] = String.fromCharCode(0x6771);
     a3[i][3] = String.fromCharCode(Math.floor(Math.random() * 0x51ff + 0x4e00)) +
