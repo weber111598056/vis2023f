@@ -1,0 +1,14 @@
+{
+  "name": "71a42d7648767969",
+  "main": "71a42d7648767969@78.js",
+  "version": "78.0.0",
+  "homepage": "https://observablehq.com/d/71a42d7648767969",
+  "author": {
+    "name": "weber's Workspace",
+    "url": "https://observablehq.com/@weber85-ws"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4 - 5"
+  }
+}
