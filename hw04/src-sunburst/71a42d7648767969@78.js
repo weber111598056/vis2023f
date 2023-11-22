@@ -119,7 +119,6 @@ function _color(d3){return(
   d3
     .scaleOrdinal()
     .domain(["工作室", "替代空間", "美術館", "減少包裝材及文宣印製", "使用無毒媒材、再生材料、廢物利用素材等", "工作場所、活動展場的節約能源"])
-    //.range(d3.schemePaired)
     .range(["#FEDFE1","#DB4D6D","#D05A6E","#EB7A77","#DC9FB4","#B5495B"])
     .unknown("#86473F")
   )}
